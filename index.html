@@ -15,9 +15,10 @@
     --marine:#005686;
     --navy:#032F4A;
     --ink:#052232;
-    --foam:#F4FAFD;
+    --foam:#E4F4FB;
+    --card:#EEF8FC;
     --white:#FFFFFF;
-    --paper:#FBFDFE;
+    --paper:#DFF1FA;
     --line: rgba(5,34,50,0.16);
     color-scheme: light;
     box-sizing:border-box;
@@ -53,7 +54,7 @@
     background: linear-gradient(180deg, var(--sky) 0%, var(--mid) 46%, var(--navy) 100%);
   }
   .hero-waves{
-    position:absolute; inset:0; width:100%; height:100%;
+    position:absolute; left:0; right:0; bottom:0; width:100%; height:62%;
     display:block;
   }
   .hero-waves path{ will-change: transform; }
@@ -78,7 +79,7 @@
     font-size: clamp(72px, 15vw, 148px);
     line-height:1;
     margin:0;
-    text-shadow: 0 2px 24px rgba(3,47,74,0.35);
+    text-shadow: 0 1px 4px rgba(3,47,74,0.5), 0 2px 28px rgba(3,47,74,0.35);
   }
   .hero-sub{
     color: var(--white);
@@ -88,12 +89,14 @@
     letter-spacing:0.01em;
     margin: 14px 0 0;
     opacity:0.96;
+    text-shadow: 0 1px 3px rgba(3,47,74,0.55), 0 2px 18px rgba(3,47,74,0.4);
   }
   .hero-artists{
     margin-top: 26px;
     color: rgba(255,255,255,0.92);
     font-size: 15px;
     letter-spacing:0.03em;
+    text-shadow: 0 1px 3px rgba(3,47,74,0.55), 0 2px 18px rgba(3,47,74,0.4);
   }
   .hero-artists span{ display:inline-block; margin:0 8px; }
   .hero-artists .dot{ opacity:0.6; }
@@ -122,7 +125,7 @@
     padding: 8px 0 84px;
   }
   .ticket{
-    background: var(--white);
+    background: var(--card);
     border-radius: 18px;
     box-shadow: 0 30px 60px -30px rgba(3,47,74,0.35);
     margin-top: -64px;
@@ -244,7 +247,7 @@
 
   /* ---------- LUNCH NOTE ---------- */
   .lunch{
-    background: var(--white);
+    background: var(--card);
     border: 1px solid var(--line);
     border-radius: 16px;
     padding: 26px 28px;
@@ -313,7 +316,7 @@
 </section>
 
 <svg class="divider" viewBox="0 0 1000 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="background:var(--navy);">
-  <path d="M0,0 C200,50 350,-10 500,20 C650,50 800,0 1000,25 L1000,60 L0,60 Z" fill="#F4FAFD"/>
+  <path d="M0,0 C200,50 350,-10 500,20 C650,50 800,0 1000,25 L1000,60 L0,60 Z" fill="#E4F4FB"/>
 </svg>
 
 <section class="details-section">
