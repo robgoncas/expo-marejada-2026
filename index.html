@@ -758,7 +758,7 @@
       var n = parseInt(localStorage.getItem(KEY) || '0', 10);
       n += 1;
       localStorage.setItem(KEY, String(n));
-      if(el) el.textContent = n + ' (este navegador)';
+      if(el) el.textContent = n + '';
     }catch(e){
       if(el) el.textContent = '—';
     }
